@@ -313,43 +313,48 @@ print(r"Newline escape: \n")
 Outputs: Newline escape: \n
 ```
 ### String Methods
-```
-# Basic Information
-len("hello")  # Returns the length of the string: 5
+#### Basic Information
+```len("hello")  # Returns the length of the string: 5```
 
-# Case Conversion
+##### Case Conversion
+```
 "Hello".lower()          # Converts to lowercase: 'hello'
 "Hello".upper()          # Converts to uppercase: 'HELLO'
 "hello world".capitalize()  # Capitalizes the first character: 'Hello world'
 "hello world".casefold() # Converts to lowercase (more aggressive): 'hello world'
 "hello world".title()    # Capitalizes the first character of each word: 'Hello World'
 "Hello".swapcase()       # Swaps the case of all characters: 'hELLO'
-
-# Alignment
+```
+##### Alignment
+```
 "hello".center(10, '-')  # Centers the string: '--hello---'
 "hello".ljust(10, '-')   # Left-aligns the string: 'hello-----'
 "hello".rjust(10, '-')   # Right-aligns the string: '-----hello'
-
-# Trimming and Stripping
+```
+##### Trimming and Stripping
+```
 "  hello  ".strip()      # Removes leading and trailing characters: 'hello'
 "  hello".lstrip()       # Removes leading characters: 'hello'
 "hello  ".rstrip()       # Removes trailing characters: 'hello'
-
-# Search and Replace
+```
+#### Search and Replace
+```
 "hello".find("l")        # Finds the first occurrence of 'l': 2
 "hello".rfind("l")       # Finds the last occurrence of 'l': 3
 "hello".index("l")       # Like find() but raises ValueError if not found: 2
 "hello".rindex("l")      # Like rfind() but raises ValueError if not found: 3
 "hello world".count("o") # Counts occurrences of 'o': 2
 "hello world".replace("world", "Python")  # Replaces substrings: 'hello Python'
-
-# Splitting and Joining
+```
+#### Splitting and Joining
+```
 "hello world".split()    # Splits into a list: ['hello', 'world']
 "apple,banana,grape".split(',')  # Splits by delimiter: ['apple', 'banana', 'grape']
 "hello\nworld".splitlines()  # Splits by line breaks: ['hello', 'world']
 ",".join(['apple', 'banana', 'grape'])  # Joins a list into a string: 'apple,banana,grape'
-
-# Checking String Content
+```
+#### Checking String Content
+```
 "hello".startswith("he") # Checks if it starts with 'he': True
 "hello".endswith("lo")   # Checks if it ends with 'lo': True
 "hello".isalnum()        # Checks if all characters are alphanumeric: True
@@ -365,23 +370,27 @@ len("hello")  # Returns the length of the string: 5
 "hello".isascii()        # Checks if all characters are ASCII: True
 "my_var".isidentifier()  # Checks if it's a valid identifier: True
 "hello".isprintable()    # Checks if all characters are printable: True
-
-# Formatting Strings
+```
+##### Formatting Strings
+```
 "Hello, {}".format("World")  # Formats specified values in a string: 'Hello, World'
 "Name: {name}, Age: {age}".format(name="Alice", age=25)  # Named placeholders
 "Price: {:.2f}".format(19.999)  # Formats a float to 2 decimal places: 'Price: 20.00'
 "hello".zfill(10)            # Pads with zeroes: '000000hello'
-
-# Encoding and Decoding
+```
+##### Encoding and Decoding
+```
 "hello".encode("utf-8")      # Encodes the string to bytes: b'hello'
 b'hello'.decode("utf-8")     # Decodes bytes back to a string: 'hello'
-
-# Translating and Mapping
+```
+##### Translating and Mapping
+```
 "hello".translate("world")   # Returns a translated string (requires a translation table)
 "hello".maketrans("aeiou", "12345")  # Creates a translation table
 "hello".expandtabs(4)        # Sets tab size in the string: 'hello'
-
-# Partitioning and Splitting
+```
+##### Partitioning and Splitting
+```
 "hello world".partition(" ") # Partitions the string: ('hello', ' ', 'world')
 "hello world".rpartition(" ")# Partitions from the right: ('hello', ' ', 'world')
 "apple,banana,grape".rsplit(",", 1)  # Splits at last occurrence of delimiter: ['apple,banana', 'grape']
