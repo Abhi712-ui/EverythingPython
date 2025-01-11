@@ -515,7 +515,7 @@ a if condition else b  # Returns a if condition is True, otherwise b
 
 ### List Methods in Python
 
-#### 1. append()
+### 1. append()
  - Adds an element to the end of the list.
 ```
 my_list = [1, 2, 3]
