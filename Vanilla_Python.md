@@ -515,27 +515,27 @@ a if condition else b  # Returns a if condition is True, otherwise b
 
 ### List Methods in Python
 
-### 1. append()
+### 1. `append()`
  - Adds an element to the end of the list.
 ```
 my_list = [1, 2, 3]
 my_list.append(4)  # my_list becomes [1, 2, 3, 4]
 ```
 
-### 2. extend()
+### 2. `extend()`
  - Extends the list by appending elements from another iterable.
  - Can also take in another iterable to be added to the list
 ```
 my_list = [1, 2, 3]
 my_list.extend([4, 5])  # my_list becomes [1, 2, 3, 4, 5]
 ```
-### 3. insert()
+### 3. `insert()`
  - Inserts an element at a specified position.
 ```
 my_list = [1, 2, 4]
 my_list.insert(2, 3)  # my_list becomes [1, 2, 3, 4]
 ```
-### 4. remove()
+### 4. `remove()`
  - Removes the first occurrence of a specified value.
  - Alternatively, the del function could be used to remove a specific value from the list, taking in the index of the value
  - The del keyword can also delete the list completely
@@ -544,33 +544,33 @@ my_list = [1, 2, 3, 2]
 my_list.remove(2)  # my_list becomes [1, 3, 2]
 del thislist[0]
 ```
-### 5. pop()
+### 5. `pop()`
  - Removes and returns the element at a specified index (default is the last).
 ```
 my_list = [1, 2, 3]
 my_list.pop()     # Returns 3; my_list becomes [1, 2]
 my_list.pop(0)    # Returns 1; my_list becomes [2]
 ```
-### 6. clear()
+### 6. `clear()`
  - Removes all elements from the list.
 ```
 my_list = [1, 2, 3]
 my_list.clear()   # my_list becomes []
 ```
-### 7. index()
+### 7. `index()`
  - Returns the index of the first occurrence of a specified value.
 ```
 my_list = [1, 2, 3, 2]
 my_list.index(2)  # Returns 1
 my_list.index(2, 2)  # Returns 3 (start search at index 2)
 ```
-### 8. count()
+### 8. `count()`
  - Returns the number of occurrences of a specified value.
 ```
 my_list = [1, 2, 3, 2]
 my_list.count(2)  # Returns 2
 ```
-### 9. sort()
+### 9. `sort()`
  - Sorts the list in ascending order (by default).
 ```
 my_list = [3, 1, 2]
@@ -583,13 +583,13 @@ my_list.sort(reverse=True)  # my_list becomes [3, 2, 1]
 my_list = [1, 2, 3]
 my_list.reverse()  # my_list becomes [3, 2, 1]
 ```
-### 11. copy()
+### 11. `copy()`
  - Returns a shallow copy of the list.
 ```
 my_list = [1, 2, 3]
 my_copy = my_list.copy()  # my_copy becomes [1, 2, 3]
 ```
-### 12. list()
+### 12. `list()`
  - Used to create a new list from an iterable.
 ```
 new_list = list("hello")  # new_list becomes ['h', 'e', 'l', 'l', 'o']
