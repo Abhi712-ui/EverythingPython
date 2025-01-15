@@ -1,4 +1,4 @@
-#Python While Loops Guide
+# Python While Loops
 
 ### 1. Basic `While` Loop
  - Repeats a block of code as long as the condition is True.
