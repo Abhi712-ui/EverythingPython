@@ -1,4 +1,4 @@
-# Python Functions Guide
+# Python Functions
 
 ## 1. Defining a Function
  - Use the `def` keyword to define a function.
